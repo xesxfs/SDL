@@ -12,8 +12,7 @@ bool Game::init(const char* title, int xpos, int ypos, int width, int height, in
             if(m_pRenderer != 0)
             {
                 SDL_SetRenderDrawColor(m_pRenderer,
-                                       255, 255, 255, 255);
-
+                                       255, 0, 0, 255);
             }
             else
             {
@@ -26,22 +25,22 @@ bool Game::init(const char* title, int xpos, int ypos, int width, int height, in
         }
     }
 
-    SDL_Surface *pTempSurface = SDL_LoadBMP("assets/rider.bmp");
-
+    //SDL_Surface *pTempSurface = SDL_LoadBMP("assets/animate.bmp");
+    SDL_Surface *pTempSurface = IMG_Load("assets/animate-alpha.png");
     m_pTexture = SDL_CreateTextureFromSurface(m_pRenderer,
                  pTempSurface);
 
     SDL_FreeSurface(pTempSurface);
     SDL_QueryTexture(m_pTexture, NULL, NULL, &m_srcRect.w, &m_srcRect.h);
-    m_srcRect.w = 50;
-    m_srcRect.h = 50;
+    m_srcRect.w = 128;
+    m_srcRect.h = 82;
 
     m_srcRect.x = 0;
     m_srcRect.y = 0;
     m_destRect.w = m_srcRect.w;
     m_destRect.h = m_srcRect.h;
-    m_destRect.x = 100;
-    m_destRect.y = 100;
+    m_destRect.x = 0;
+    m_destRect.y = 0;
     m_bRunning = true;
     return true;
 
@@ -50,8 +49,14 @@ bool Game::init(const char* title, int xpos, int ypos, int width, int height, in
 void Game::render()
 {
     SDL_RenderClear(m_pRenderer); // clear the renderer to the draw color
-    SDL_RenderCopy(m_pRenderer, m_pTexture, &m_srcRect, &m_destRect);
+    //SDL_RenderCopy(m_pRenderer, m_pTexture, &m_srcRect, &m_destRect);
+    //SDL_RenderCopy(m_pRenderer, m_pTexture, 0, 0);
+    SDL_RenderCopyEx(m_pRenderer, m_pTexture, &m_srcRect, &m_destRect,0,0,SDL_FLIP_NONE);
     SDL_RenderPresent(m_pRenderer); // draw to the screen
+}
+void Game::update()
+{
+    m_srcRect.x =128*int(((SDL_GetTicks()/100)%6));
 }
 
 void Game::clean()
