@@ -1,0 +1,10 @@
+# depslib dependency file v1.0
+1544609940 source:d:\sdl\source\sdldemo\main.cpp
+	"Game.h"
+
+1544666978 d:\sdl\source\sdldemo\game.h
+	"SDL2/SDL.h"
+
+1544610490 source:d:\sdl\source\sdldemo\game.cpp
+	"Game.h"
+
