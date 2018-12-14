@@ -31,6 +31,8 @@
 		<Compiler>
 			<Add option="-Wall" />
 		</Compiler>
+		<Unit filename="GameObject.cpp" />
+		<Unit filename="GameObject.h" />
 		<Extensions>
 			<code_completion />
 			<envvars />

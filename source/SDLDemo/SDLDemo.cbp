@@ -31,6 +31,10 @@
 		<Compiler>
 			<Add option="-Wall" />
 		</Compiler>
+		<Unit filename="Game.cpp" />
+		<Unit filename="Game.h" />
+		<Unit filename="TextureManager.cpp" />
+		<Unit filename="TextureManager.h" />
 		<Unit filename="main.cpp" />
 		<Extensions>
 			<code_completion />
