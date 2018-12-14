@@ -2,7 +2,7 @@
 1544609940 source:d:\sdl\source\sdldemo\main.cpp
 	"Game.h"
 
-1544701630 d:\sdl\source\sdldemo\game.h
+1544757855 d:\sdl\source\sdldemo\game.h
 	"SDL2/SDL.h"
 	"SDL2/SDL_image.h"
 	"TextureManager.h"
@@ -10,10 +10,13 @@
 1544700529 source:d:\sdl\source\sdldemo\game.cpp
 	"Game.h"
 
-1544703651 d:\sdl\source\sdldemo\texturemanager.h
+1544757976 d:\sdl\source\sdldemo\texturemanager.h
 	"SDL2/SDL.h"
 	"SDL2/SDL_image.h"
 	<iostream>
 	<string>
 	<map>
+
+1544757797 source:d:\sdl\source\sdldemo\texturemanager.cpp
+	"TextureManager.h"
 

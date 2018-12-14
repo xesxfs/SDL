@@ -24,10 +24,11 @@ private:
     SDL_Window* m_pWindow;
     SDL_Renderer* m_pRenderer;
     bool m_bRunning;
-
-    SDL_Texture* m_pTexture;
-    SDL_Rect m_srcRect;
-    SDL_Rect m_destRect;
+    int m_currentFrame;
+  //  TextureManager m_textureManager;
+    //SDL_Texture* m_pTexture;
+    //SDL_Rect m_srcRect;
+    //SDL_Rect m_destRect;
 };
 
 #endif // __Game__
