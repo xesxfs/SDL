@@ -27,6 +27,6 @@ private:
     std::map<std::string,SDL_Texture*> m_textureMap;
     TextureManager() {}
     static TextureManager*  s_pInstance ;
-
+    typedef TextureManager TheTextureManager;
 };
 #endif

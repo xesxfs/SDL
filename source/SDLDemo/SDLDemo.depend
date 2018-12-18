@@ -1,16 +1,23 @@
 # depslib dependency file v1.0
-1544609940 source:d:\sdl\source\sdldemo\main.cpp
+1545046538 source:d:\sdl\source\sdldemo\main.cpp
 	"Game.h"
+	<iostream>
 
-1544757855 d:\sdl\source\sdldemo\game.h
+1545047784 d:\sdl\source\sdldemo\game.h
 	"SDL2/SDL.h"
 	"SDL2/SDL_image.h"
 	"TextureManager.h"
+	"Player.h"
+	"Enemy.h"
+	"GameObject.h"
+	"SDLGameObject.h"
+	<iostream>
+	<vector>
 
-1544700529 source:d:\sdl\source\sdldemo\game.cpp
+1545047905 source:d:\sdl\source\sdldemo\game.cpp
 	"Game.h"
 
-1544757976 d:\sdl\source\sdldemo\texturemanager.h
+1545043766 d:\sdl\source\sdldemo\texturemanager.h
 	"SDL2/SDL.h"
 	"SDL2/SDL_image.h"
 	<iostream>
@@ -19,4 +26,37 @@
 
 1544757797 source:d:\sdl\source\sdldemo\texturemanager.cpp
 	"TextureManager.h"
+
+1545047292 d:\sdl\source\sdldemo\player.h
+	"SDLGameObject.h"
+	"LoaderParams.h"
+	"SDL2/SDL.h"
+
+1545043566 d:\sdl\source\sdldemo\gameobject.h
+	<iostream>
+	"SDL2/SDL.h"
+	"LoaderParams.h"
+
+1545047316 source:d:\sdl\source\sdldemo\player.cpp
+	"Player.h"
+
+1545044124 source:d:\sdl\source\sdldemo\gameobject.cpp
+
+1545047826 source:d:\sdl\source\sdldemo\enemy.cpp
+	"Enemy.h"
+
+1545048146 d:\sdl\source\sdldemo\enemy.h
+	"SDLGameObject.h"
+
+1545047705 d:\sdl\source\sdldemo\sdlgameobject.h
+	"GameObject.h"
+	"TextureManager.h"
+	"Game.h"
+	"LoaderParams.h"
+
+1545047610 d:\sdl\source\sdldemo\loaderparams.h
+	<iostream>
+
+1545046996 source:d:\sdl\source\sdldemo\sdlgameobject.cpp
+	"SDLGameObject.h"
 
