@@ -1,5 +1,5 @@
 #include "GameStateMachine.h"
-
+#include<iostream>
 
 
 GameStateMachine::GameStateMachine()
@@ -41,6 +41,22 @@ void GameStateMachine::changeState(GameState *pState)
 	m_gameStates.push_back(pState);
 	// initialise it
 	m_gameStates.back()->onEnter();
+}
+
+void GameStateMachine::update()
+{
+	if (!m_gameStates.empty())
+	{		
+		m_gameStates.back()->update();
+	}
+}
+
+void GameStateMachine::render()
+{
+	if (!m_gameStates.empty())
+	{
+		m_gameStates.back()->render();
+	}
 }
 
 GameStateMachine::~GameStateMachine()

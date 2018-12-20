@@ -1,2 +1,34 @@
-﻿  Game.cpp
+﻿  AnimatedGraphic.cpp
+  AnimatedGraphicCreator.cpp
+  Enemy.cpp
+  EnemyCreator.cpp
+  Game.cpp
+  GameObjectFactory.cpp
+  GameOverState.cpp
+  InputHandler.cpp
+d:\sdl\source\sdlpro\sdlpro\inputhandler.cpp(96): warning C4244: “参数”: 从“Sint32”转换到“float”，可能丢失数据
+d:\sdl\source\sdlpro\sdlpro\inputhandler.cpp(97): warning C4244: “参数”: 从“Sint32”转换到“float”，可能丢失数据
+d:\sdl\source\sdlpro\sdlpro\inputhandler.cpp(143): warning C4018: “<”: 有符号/无符号不匹配
+  main.cpp
+d:\sdl\source\sdlpro\sdlpro\main.cpp(5): warning C4244: “初始化”: 从“float”转换到“int”，可能丢失数据
+  MainMenuState.cpp
+  MenuButton.cpp
+  MenuButtonCreator.cpp
+  MenuState.cpp
+  PauseState.cpp
+  Player.cpp
+  PlayerCreator.cpp
+  PlayState.cpp
+d:\sdl\source\sdlpro\sdlpro\playstate.cpp(76): warning C4244: “=”: 从“float”转换到“int”，可能丢失数据
+d:\sdl\source\sdlpro\sdlpro\playstate.cpp(77): warning C4244: “=”: 从“float”转换到“int”，可能丢失数据
+d:\sdl\source\sdlpro\sdlpro\playstate.cpp(78): warning C4244: “=”: 从“float”转换到“int”，可能丢失数据
+d:\sdl\source\sdlpro\sdlpro\playstate.cpp(79): warning C4244: “=”: 从“float”转换到“int”，可能丢失数据
+d:\sdl\source\sdlpro\sdlpro\playstate.cpp(82): warning C4244: “=”: 从“float”转换到“int”，可能丢失数据
+d:\sdl\source\sdlpro\sdlpro\playstate.cpp(83): warning C4244: “=”: 从“float”转换到“int”，可能丢失数据
+d:\sdl\source\sdlpro\sdlpro\playstate.cpp(84): warning C4244: “=”: 从“float”转换到“int”，可能丢失数据
+d:\sdl\source\sdlpro\sdlpro\playstate.cpp(85): warning C4244: “=”: 从“float”转换到“int”，可能丢失数据
+  SDLGameObject.cpp
+d:\sdl\source\sdlpro\sdlpro\sdlgameobject.cpp(11): warning C4244: “参数”: 从“int”转换到“float”，可能丢失数据
+  StateParser.cpp
+  正在生成代码...
   SDLPro.vcxproj -> D:\SDL\source\SDLPro\x64\Debug\SDLPro.exe

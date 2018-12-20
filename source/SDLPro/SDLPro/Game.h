@@ -26,7 +26,7 @@ public:
 	//    GameObject* m_player;
 	//    GameObject* m_enemy;
 
-	std::vector<GameObject*> m_gameObjects;
+	//std::vector<GameObject*> m_gameObjects;
 	bool init(const char* title, int xpos, int ypos, int width, int
 		height, int flags);
 	void render();
@@ -44,6 +44,8 @@ public:
 	{
 		return m_bRunning;
 	}
+
+	GameStateMachine* getStateMachine() { return m_pGameStateMachine; }
 
 private:
 	SDL_Window* m_pWindow;

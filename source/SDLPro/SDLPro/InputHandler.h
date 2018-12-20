@@ -48,6 +48,8 @@ public:
 
 	bool isKeyDown(SDL_Scancode key);
 
+	void reset() {}
+
 private:
 	std::vector<SDL_Joystick*> m_joysticks;
 	bool m_bJoysticksInitialised;
