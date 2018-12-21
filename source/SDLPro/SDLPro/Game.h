@@ -27,8 +27,7 @@ public:
 	//    GameObject* m_enemy;
 
 	//std::vector<GameObject*> m_gameObjects;
-	bool init(const char* title, int xpos, int ypos, int width, int
-		height, int flags);
+	bool init(const char* title, int xpos, int ypos, int width, int height, int flags);
 	void render();
 	void update();
 	void handleEvents();
@@ -47,6 +46,15 @@ public:
 
 	GameStateMachine* getStateMachine() { return m_pGameStateMachine; }
 
+	int getGameWidth() const
+	{
+		return m_gameWidth;
+	}
+	int getGameHeight() const
+	{
+		return m_gameHeight;
+	}
+
 private:
 	SDL_Window* m_pWindow;
 	SDL_Renderer* m_pRenderer;
@@ -55,7 +63,8 @@ private:
 	GameStateMachine* m_pGameStateMachine;
 	Game() {};
 	static Game* s_pInstance;
-
+	int m_gameWidth;
+	int m_gameHeight;
 };
 
 typedef Game TheGame;

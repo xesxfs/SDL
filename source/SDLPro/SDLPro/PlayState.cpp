@@ -7,6 +7,7 @@
 #include "Enemy.h"
 #include "GameOverState.h"
 #include "StateParser.h"
+#include "LevelParser.h"
 
 const std::string PlayState::s_playID = "PLAY";
 
@@ -22,31 +23,36 @@ void PlayState::update()
 			PauseState());
 	}
 
-	for (int i = 0; i < m_gameObjects.size(); i++)
-	{
-		m_gameObjects[i]->update();
-	}
+	//for (int i = 0; i < m_gameObjects.size(); i++)
+	//{
+	//	m_gameObjects[i]->update();
+	//}
 
-	if (m_gameObjects.size() >= 2&&checkCollision(dynamic_cast<SDLGameObject*>
-		(m_gameObjects[0]), dynamic_cast<SDLGameObject*>
-		(m_gameObjects[1])))
-	{
-		TheGame::Instance()->getStateMachine()->pushState(new GameOverState());
-	}
+	//if (m_gameObjects.size() >= 2&&checkCollision(dynamic_cast<SDLGameObject*>
+	//	(m_gameObjects[0]), dynamic_cast<SDLGameObject*>
+	//	(m_gameObjects[1])))
+	//{
+	//	TheGame::Instance()->getStateMachine()->pushState(new GameOverState());
+	//}
+	pLevel->update();
 }
 void PlayState::render()
 {
-	for (int i = 0; i < m_gameObjects.size(); i++)
+/*	for (int i = 0; i < m_gameObjects.size(); i++)
 	{
 		m_gameObjects[i]->draw();
-	}
-	// nothing for now
+	}*/	
+	pLevel->render();
 }
 bool PlayState::onEnter()
 {
-	StateParser stateParser;
+	/*StateParser stateParser;
 	stateParser.parseState("test.xml", s_playID, &m_gameObjects,&m_textureIDList);
+*/
+	LevelParser levelParser;
+	pLevel = levelParser.parseLevel("assets/map1.tmx");
 	std::cout << "entering PlayState\n";
+
 	return true;
 }
 

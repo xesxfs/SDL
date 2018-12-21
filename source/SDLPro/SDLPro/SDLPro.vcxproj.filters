@@ -96,6 +96,24 @@
     <ClCompile Include="AnimatedGraphicCreator.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="Level.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Layer.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="TileLayer.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="LevelParser.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="base64.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjectLayer.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="TextureManager.h">
@@ -177,6 +195,27 @@
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="AnimatedGraphicCreator.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Level.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Layer.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="TileLayer.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="LevelParser.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Tileset.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="base64.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjectLayer.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>

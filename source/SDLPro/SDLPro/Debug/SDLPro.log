@@ -1,0 +1,6 @@
+﻿  TileLayer.cpp
+d:\sdl\source\sdlpro\sdlpro\tilelayer.cpp(21): warning C4244: “=”: 从“float”转换到“int”，可能丢失数据
+d:\sdl\source\sdlpro\sdlpro\tilelayer.cpp(22): warning C4244: “=”: 从“float”转换到“int”，可能丢失数据
+d:\sdl\source\sdlpro\sdlpro\tilelayer.cpp(48): warning C4018: “<”: 有符号/无符号不匹配
+d:\sdl\source\sdlpro\sdlpro\tilelayer.cpp(50): warning C4018: “<=”: 有符号/无符号不匹配
+  SDLPro.vcxproj -> D:\SDL\source\SDLPro\Debug\SDLPro.exe

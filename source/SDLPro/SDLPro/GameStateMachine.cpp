@@ -30,13 +30,15 @@ void GameStateMachine::changeState(GameState *pState)
 	{
 		if (m_gameStates.back()->getStateID() == pState->getStateID())
 		{
-			return; // do nothing
+			if (m_gameStates.back()->onExit())
+			{
+				delete m_gameStates.back();
+				m_gameStates.pop_back();
+			}
+
+			return; 
 		}
-		if (m_gameStates.back()->onExit())
-		{
-			delete m_gameStates.back();
-			m_gameStates.pop_back();
-		}
+	
 	}
 	m_gameStates.push_back(pState);
 	// initialise it
