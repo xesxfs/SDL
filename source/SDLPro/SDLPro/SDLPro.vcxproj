@@ -78,7 +78,7 @@
       <AdditionalIncludeDirectories>D:\SDL\SDL2-2.0.9\include;D:\SDL\SDL2_image-2.0.4_VC\include;D:\SDL\SDLGameDevelopment\zlib128-dll\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
-      <AdditionalLibraryDirectories>D:\SDL\SDL2-2.0.9\lib\x86;D:\SDL\SDL2_image-2.0.4_VC\lib\x86;%(AdditionalLibraryDirectories);D:\SDL\SDL2-2.0.9\include;D:\SDL\SDLGameDevelopment\zlib128-dll\lib</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>D:\SDL\SDL2-2.0.9\lib\x86;D:\SDL\SDL2_image-2.0.4_VC\lib\x86;%(AdditionalLibraryDirectories);D:\SDL\SDLGameDevelopment\zlib128-dll\lib</AdditionalLibraryDirectories>
       <SubSystem>Windows</SubSystem>
       <AdditionalDependencies>SDL2.lib;SDL2main.lib;SDL2_image.lib;zdll.lib</AdditionalDependencies>
     </Link>
@@ -108,7 +108,7 @@
     <Link>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
-      <AdditionalLibraryDirectories>D:\SDL\SDL2-2.0.9\lib\x86;D:\SDL\SDL2_image-2.0.4_VC\lib\x86;%(AdditionalLibraryDirectories);D:\SDL\SDL2-2.0.9\include;D:\SDL\SDLGameDevelopment\zlib128-dll\lib</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>D:\SDL\SDL2-2.0.9\lib\x86;D:\SDL\SDL2_image-2.0.4_VC\lib\x86;%(AdditionalLibraryDirectories);D:\SDL\SDLGameDevelopment\zlib128-dll\lib</AdditionalLibraryDirectories>
       <SubSystem>Windows</SubSystem>
       <AdditionalDependencies>SDL2.lib;SDL2main.lib;SDL2_image.lib;zdll.lib</AdditionalDependencies>
     </Link>
